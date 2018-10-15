@@ -1,0 +1,197 @@
+.body {
+	height: 700px;
+	width: auto;
+	background-color: #eaeaea;
+}
+
+.cover {
+	position: absolute;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-196px,-300px);
+	height: 600px;
+	width: 392px;
+	overflow: hidden;
+	z-index: 1;
+	background-color: #d8402e;
+	transition: .5s;
+}
+
+.ground {
+	position: absolute;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-196px,-300px);
+	height: 600px;
+	width: 392px;
+	background: linear-gradient(360deg, rgba(129,0,0,1) 0%, rgba(235,22,0,1) 26%, rgba(237,137,0,1) 65%, rgba(255,216,0,1) 100%);
+	z-index: -9;
+}
+
+.cover:hover {
+	background-color: transparent;
+	transition: .5s;
+}
+
+
+.element {
+	filter: blur(.25px);
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.black {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 140px;
+	width: 392px;
+	background-color: black;
+	z-index: -1;
+}
+
+.line {
+	position: absolute;
+	top: 453px;
+	height: 13px;
+	width: 392px;
+	background-color: #f0eedd;
+	z-index: 0;
+	filter: blur(.25px);
+
+}
+
+.circle {
+	position: absolute;
+	top: 400px;
+	left: 130px;
+	width: 100px;
+	height: 100px;
+	background: black;
+	border-radius: 200px;
+	border: #f0eedd solid 10px;
+	z-index: 1;
+	filter: blur(.25px);
+}
+
+
+.four {
+	position: absolute;
+	top: 352px;
+	left: 155px;
+	font-family: League Gothic, sans-serif;
+	font-weight: 200;
+	font-size: 75px;
+	color: #d8402e;
+	z-index: 2;
+	animation: four 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes four {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.ray {
+	position: absolute;
+	top: 525px;
+	left: 32px;
+	font-size: 20px;
+	font-family: p22-underground-sc, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	color: #d8402e;
+	letter-spacing: 15px;
+	animation: ray 3s;
+
+}
+
+@keyframes ray {
+	0% {top: 620px; left: 32px;}
+	100% {top: 525px; left 32px;}
+}
+
+.ann {
+	position: absolute;
+	top: 2px;
+	left: 30px;
+	font-family: erbaum, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	color: #f0eedd;
+	letter-spacing: 2.25px;
+}
+
+.title {
+	position: absolute;
+	top: 247px;
+	left: 50px; 
+	font-family: League Gothic, sans-serif;
+	font-weight: 200;
+	color: #f0eedd;
+	font-size: 83px;
+	letter-spacing: 2px;
+	filter: blur(.25px);
+	z-index: 1
+}
+
+
+.title-one {
+	position: absolute;
+	top: 250px;
+	left: 54px; 
+	font-family: League Gothic, sans-serif;
+	font-weight: 200;
+	color: #000;
+	font-size: 83px;
+	letter-spacing: 2px;
+	z-index: 0;
+}
+
+.title-two {
+	position: absolute;
+	top: 250px;
+	left: 48.75px; 
+	font-family: League Gothic, sans-serif;
+	font-weight: 200;
+	color: #000;
+	font-size: 83px;
+	letter-spacing: 2px;
+	z-index: 0;
+}
+
+
+.book {
+	opacity: 1;
+	position: absolute;
+	top: 30px;
+	left: -100px;
+	transform: scale(.60);
+}
+
+.mark {
+	position: absolute;
+	left: 130px;
+	top: 60px;
+	transform: scale(.17);
+	animation: mark 3s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes mark {
+	0% {left: 130px; top: 60px;}
+	25% {left: 170px; top: 40px;}
+	50% {left: 170px; top: 50px;}
+	75% {left: 130px; top: 70px;}
+	100% {left: 130px; top: 60px;}
+}
